@@ -1,0 +1,308 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f7ff;
+  color: #0f0f0f;
+}
+
+/* Buttons – Base Style */
+.btn-small,
+.btn-primary,
+.btn-secondary {
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Buttons – Specific Sizes */
+.btn-small {
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.btn-secondary {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Button Hover Effects */
+.btn-small:hover,
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #3730a3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4F46E5;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  background-color: #f5f7ff; /* Fallback color */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Preview Section */
+.preview-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 80px 60px;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.preview-text {
+  flex: 1;
+}
+
+.preview-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.preview-text p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.preview-image {
+  flex: 1;
+}
+
+.preview-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+/* Stats Section */
+.stats {
+  background-color: #e7eafe;
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.stats h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.stats-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stats-numbers div {
+  text-align: center;
+}
+
+.stats-numbers h3 {
+  font-size: 2.5rem;
+  color: #4F46E5;
+}
+
+.stats-numbers p {
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  width: 300px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.reviewer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Banner Section */
+.banner {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.banner-image img {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #eef4ff;
+  padding: 80px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  gap: 40px;
+}
+
+.contact-text {
+  flex: 1 1 300px;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.footer h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #4F46E5;
+}
+
+.footer p {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.footer-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #4F46E5;
+}
